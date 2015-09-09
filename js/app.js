@@ -22,9 +22,18 @@ var mainState = {
   },
 
   update: function() {  
-    if (this.bird.inWorld === false)
+    if (this.bird.inWorld === false){
       this.restartGame();
+    }
   },
+
+  jump: function () {
+    this.bird.body.velocity.y = -350;
+  },
+
+  restartGame: function(){
+    game.state.start('main');
+  }
 };
 
 
