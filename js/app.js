@@ -62,9 +62,9 @@ var mainState = {
   addOnePipe: function (x, y) {
     var pipe = this.pipes.getFirstDead();
     pipe.reset(x, y);
-    pipe.body.velocity.x = -200;
-    pipe.checkWorldBounds =  true;
-    pipe.outOfBoundKill = true;
+    pipe.body.velocity.x = -200; 
+    pipe.checkWorldBounds = true;
+    pipe.outOfBoundsKill = true;
   },
 
   addRowOfPipes: function () {
