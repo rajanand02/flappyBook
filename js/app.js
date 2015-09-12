@@ -37,7 +37,7 @@ var mainState = {
 
     //show initial score
     this.score = 0;
-    this.labelScore  = game.add.text(20, 20, "0", {font: '25px Bold', fill: '#ffffff'})
+    this.labelScore  = game.add.text(20, 20, "0", {font: '25px Bold', fill: '#ffffff'});
   },
 
   update: function() {  
@@ -76,7 +76,7 @@ var mainState = {
         this.addOnePipe(400, i*60 +10);
       }
     }
-    // increase the row on every successful pass
+    // increase the score
     this.score += 1;
     this.labelScore.text = this.score;
   }
